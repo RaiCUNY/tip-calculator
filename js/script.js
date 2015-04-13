@@ -28,19 +28,7 @@ function tipCalculate (){
 //    }
 
 function resetCalc() {
-	document.getElementById('bill').value
-	='';
-
-var percBtns = document.getElementsByClassName('tip-btn');
-
-for (var i=0; i<percBtns.length; i++){
-     if (percBtns[i].checked){
-     percBtns[i].checked = false;
-
-     }
-  }
-
- var tipBox = document.getElementById('tipAmount');
-     tipBox.innerHTML = '$0.00';
+ var output=$('#tipamount');
+ $(output).empty();
 
 }
